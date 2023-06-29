@@ -1,0 +1,18 @@
+.money-box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+}
+
+.money-box > .dev-money-btn {
+    flex: 1;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: grey;
+    height: 32px;
+    margin: 4px;
+}
+
+.dev-money-btn:last-child {
+    margin-right: 0px;
+}

@@ -1,9 +1,14 @@
 <template>
     <div class="text-container">
-        <span v-for="(about, i) in aboutList" :key="`about-${i}`" class="falling-text"></span>
+        <span
+            v-for="(about, i) in aboutMeData.aboutList"
+            :key="`about-${i}`"
+            class="falling-text"
+            >{{ about.content }}</span
+        >
     </div>
 </template>
 
 <script setup lang="ts">
-const aboutList = reactive([]);
+const { aboutMeData } = useAboutMe();
 </script>

@@ -1,6 +1,7 @@
 <template>
-    <Header />
     <New />
+    <AboutMe />
+    <RainyText />
 </template>
 
 <script setup></script>

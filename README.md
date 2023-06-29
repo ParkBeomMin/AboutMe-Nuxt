@@ -10,7 +10,7 @@ Nuxt 3.6.1
 Node 16.14.0  
 yarn 1.22.19  
 vite
-nitro
+nitro 2.5.2
 
 ## Setup
 

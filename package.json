@@ -1,16 +1,24 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18",
-    "nuxt": "^3.6.1"
-  }
+    "name": "nuxt-app",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "@nuxt/devtools": "latest",
+        "@types/node": "^18",
+        "nuxt": "^3.6.1"
+    },
+    "volta": {
+        "node": "16.14.0",
+        "yarn": "1.22.19"
+    },
+    "dependencies": {
+        "copy-to-clipboard": "^3.3.3",
+        "sweetalert2": "^11.7.12"
+    }
 }
