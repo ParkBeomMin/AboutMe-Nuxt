@@ -1,6 +1,16 @@
-# Nuxt 3 Minimal Starter
+# About Me🌱
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+친구들이 생각하는 나는 어떤 사람일까? 친구들의 마음이 모여 나의 새싹을 키워보세요!
+
+## 기능
+
+## 개발 환경
+
+Nuxt 3.6.1  
+Node 16.14.0  
+yarn 1.22.19  
+vite
+nitro
 
 ## Setup
 
