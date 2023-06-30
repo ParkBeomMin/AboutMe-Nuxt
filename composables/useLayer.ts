@@ -11,8 +11,6 @@ export const usePassWordLayer = () => {
         isShow: boolean;
         callback?: Function;
     }) => {
-        console.log(2);
-
         passwordLayerData.value = { isShow, callback };
         console.log(passwordLayerData.value);
     };

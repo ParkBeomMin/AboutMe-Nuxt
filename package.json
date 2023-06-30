@@ -19,6 +19,8 @@
     },
     "dependencies": {
         "copy-to-clipboard": "^3.3.3",
+        "firebase": "^8",
+        "firebase-admin": "^11.9.0",
         "sweetalert2": "^11.7.12"
     }
 }

@@ -9,6 +9,7 @@
                 name="password"
                 id="password"
                 class="pw-input"
+                v-model="pwState.password"
             />
             <button class="pw-btn">완료</button>
         </form>
@@ -17,9 +18,13 @@
 
 <script setup lang="ts">
 const { passwordLayerData, setIsShowPasswordLayer } = usePassWordLayer();
+const pwState = reactive({
+    password: "",
+});
 const submit = (e: FormDataEvent) => {
     e.preventDefault();
-    passwordLayerData.value.callback?.();
+    console.log("pwState.password ", pwState.password);
+    passwordLayerData.value.callback?.({ password: pwState.password });
     setIsShowPasswordLayer({ isShow: false });
 };
 </script>

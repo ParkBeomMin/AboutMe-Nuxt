@@ -1,14 +1,26 @@
 <template>
     <div class="wrap">
         <div class="sky"></div>
-        <component class="about-me" :is="`${aboutMeData.type}`" />
-        <svg-sprout class="about-me" />
+        <SvgSprout
+            v-if="aboutMeData.type"
+            :color="aboutMeData.color"
+            class="about-me"
+        />
+        <SvgGrowing
+            :num="aboutMeData.num"
+            :color="aboutMeData.color"
+            class="about-me"
+        />
+        <SvgTree
+            :num="aboutMeData.num"
+            :color="aboutMeData.color"
+            class="about-me"
+        />
         <div class="ground"></div>
     </div>
 </template>
 
 <script setup lang="ts">
-import sprout from "~/components/Svg/Sprout.vue";
 const { aboutMeData } = useAboutMe();
 </script>
 

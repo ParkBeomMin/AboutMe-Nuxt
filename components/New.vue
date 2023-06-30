@@ -16,17 +16,22 @@ import copy from "copy-to-clipboard";
 const router = useRouter();
 const { setIsShowPasswordLayer } = usePassWordLayer();
 const create = () => {
-    console.log(1);
-
     setIsShowPasswordLayer({
         isShow: true,
-        callback: () => {
-            console.log(33);
+        callback: async ({ password }: { password: string }) => {
+            const id = await useFetch("/api/aboutMe", {
+                method: "post",
+                body: {
+                    password,
+                },
+            });
+            console.log(id);
+
             Swal.fire({
                 html: "나의 새싹이 생성되었습니다.<br>클립보드에 복사된 링크로<br>친구들에게 공유해보세요!",
             }).then((v) => {
                 if (v.value || v.dismiss) {
-                    router.push("/about/test");
+                    router.push(`/about/${id}`);
                 }
             });
         },
