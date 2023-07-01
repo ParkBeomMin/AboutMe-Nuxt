@@ -15,7 +15,9 @@ import Swal from "sweetalert2";
 import copy from "copy-to-clipboard";
 const { setIsShowMoneyLayer } = useMoneyLayer();
 const share = () => {
-    copy(`${window.location.host}/about/test`);
+    const route = useRoute();
+    const id = route.params.id;
+    copy(`${window.location.host}/about/${id}`);
     Swal.fire({
         html: "클립보드에 복사된 링크로<br>친구들에게 공유해보세요!",
     });

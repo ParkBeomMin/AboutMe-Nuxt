@@ -8,17 +8,19 @@
             </button>
         </form>
         <nuxt-link class="go-new" to="/"> 새싹 만들러가기🌱</nuxt-link>
-        <a href="javascript:void(0)" class="go-my" @click="showMyAbout"
-            >내 새싹 보러가기💚</a
-        >
+        <a href="javascript:void(0)" class="go-my" @click="showMyAbout({ id })">
+            내 새싹 보러가기💚
+        </a>
     </div>
 </template>
 
 <script setup lang="ts">
 const { aboutData, sendAbout, showMyAbout } = useAbout();
+const route = useRoute();
+const id = route.params.id;
 const submit = (e: FormDataEvent) => {
     e.preventDefault();
-    sendAbout();
+    sendAbout({ id: id as string });
 };
 </script>
 

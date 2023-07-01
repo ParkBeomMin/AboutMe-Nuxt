@@ -25,6 +25,7 @@ const create = () => {
                     password,
                 },
             });
+            copy(`${window.location.host}/about/${data.value}`);
             Swal.fire({
                 html: "나의 새싹이 생성되었습니다.<br>클립보드에 복사된 링크로<br>친구들에게 공유해보세요!",
             }).then((v) => {
