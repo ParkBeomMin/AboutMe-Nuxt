@@ -15,7 +15,11 @@ export const useAboutMe = () => {
     const getAboutMeData = async ({ id }: { id: string }) => {
         console.log(id);
         aboutMeData.value.aboutList = [];
-        const { data } = await useFetch(`/api/aboutMe?id=${id}`);
+        await nextTick();
+        const { data, refresh } = await useFetch(`/api/aboutMe?id=${id}`);
+        // const { data, refresh } = await useAsyncData("aboutME", () =>
+        //     $fetch(`/api/aboutMe?id=${id}`)
+        // );
         console.log(data.value);
 
         console.log(aboutMeData.value);
