@@ -19,7 +19,11 @@ export const useAboutMe = () => {
         console.log(data.value);
 
         console.log(aboutMeData.value);
-        aboutMeData.value = data.value as any;
+        if (data.value) {
+            console.log(123);
+
+            aboutMeData.value = data.value as any;
+        }
         console.log(aboutMeData.value);
     };
 

@@ -1,12 +1,14 @@
 {
     "name": "nuxt-app",
     "private": true,
+    "type": "module",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
-        "postinstall": "nuxt prepare"
+        "postinstall": "nuxt prepare",
+        "deploy": "NITRO_PRESET=firebase yarn build && cp ./service-account.json ./.output/server/service-account.json  && firebase deploy"
     },
     "devDependencies": {
         "@nuxt/devtools": "latest",
@@ -22,6 +24,7 @@
         "copy-to-clipboard": "^3.3.3",
         "firebase": "^8",
         "firebase-admin": "^11.9.0",
+        "firebase-functions": "^4.4.1",
         "nuxi": "^3.6.1",
         "sweetalert2": "^11.7.12"
     }

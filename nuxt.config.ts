@@ -8,4 +8,7 @@ export default defineNuxtConfig({
             production_mode: isProduction,
         },
     },
+    nitro: {
+        preset: "firebase",
+    },
 });
