@@ -18,7 +18,7 @@
             :color="aboutMeData.color"
             class="about-me"
         />
-        <div class="ground"></div>
+        <div class="ground" :style="`color: ${aboutMeData.groundColor};`"></div>
     </div>
 </template>
 

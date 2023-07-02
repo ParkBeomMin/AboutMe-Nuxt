@@ -23,7 +23,10 @@ export default defineEventHandler(async (event) => {
             .collection("about");
         const snapshot = await aboutCol.get();
         aboutList = snapshot.docs.map((doc) => doc.data());
-        const { color, num, groundColor } = doc.data() as any;
+        const ds = doc.data() as any;
+        color = ds.color;
+        groundColor = ds.groundColor;
+        num = ds.num;
     }
     if (aboutList.length > 10) {
         type = "growing";
