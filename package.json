@@ -8,7 +8,7 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "deploy": "NITRO_PRESET=firebase yarn build && cp ./service-account.json ./.output/server/service-account.json  && firebase deploy"
+        "deploy": "NITRO_PRESET=firebase yarn build && cp ./*.txt ./.output/public && cp ./*.html ./.output/public && cp ./service-account.json ./.output/server/service-account.json  && firebase deploy"
     },
     "devDependencies": {
         "@nuxt/devtools": "latest",
