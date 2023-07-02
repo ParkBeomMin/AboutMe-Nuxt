@@ -6,7 +6,6 @@ export default defineEventHandler(async (event) => {
     const ref = await firestore.collection("users").doc(id);
     const doc = await ref.get();
     const data = doc.data();
-    // console.log(data);
     if (data?.password === password) {
         return true;
     }

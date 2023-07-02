@@ -14,8 +14,6 @@ const { title = "" } = defineProps({
 const emit = defineEmits<{ (e: "close"): void }>();
 
 const close = () => {
-    console.log("close");
-
     emit("close");
 };
 </script>

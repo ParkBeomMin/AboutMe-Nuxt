@@ -23,7 +23,6 @@ const pwState = reactive({
 });
 const submit = (e: FormDataEvent) => {
     e.preventDefault();
-    console.log("pwState.password ", pwState.password);
     passwordLayerData.value.callback?.({ password: pwState.password });
     setIsShowPasswordLayer({ isShow: false });
 };

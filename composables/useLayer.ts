@@ -12,7 +12,6 @@ export const usePassWordLayer = () => {
         callback?: Function;
     }) => {
         passwordLayerData.value = { isShow, callback };
-        console.log(passwordLayerData.value);
     };
 
     return {

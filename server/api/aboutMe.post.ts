@@ -2,8 +2,6 @@ import { firestore } from "../utils/firebase";
 
 export default defineEventHandler(async (event) => {
     const { password } = await readBody(event);
-    console.log(password);
-
     const res = await firestore.collection("users").add({
         treeFilter: generateFilter(),
         groundColor: generateRGB(),
@@ -11,7 +9,6 @@ export default defineEventHandler(async (event) => {
         num: Math.floor(Math.random() * 5) + 1,
         password,
     });
-    console.log(res.id);
     return res.id;
 });
 

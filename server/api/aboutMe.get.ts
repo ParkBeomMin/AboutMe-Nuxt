@@ -1,7 +1,6 @@
 import { firestore } from "../utils/firebase";
 
 export default defineEventHandler(async (event) => {
-    console.log("aboutme get");
     const { id } = getQuery(event);
 
     let aboutList = [];
@@ -13,7 +12,6 @@ export default defineEventHandler(async (event) => {
     if (id == "new") {
         const ref = await firestore.collection("abouts");
         const snapshot = await ref.get();
-        console.log(snapshot.docs.map((doc) => doc.data()));
         aboutList = snapshot.docs.map((doc) => doc.data());
     } else {
         const ref = await firestore.collection("users").doc(id as string);
