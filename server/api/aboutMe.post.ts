@@ -1,13 +1,14 @@
-import { firestore } from "../utils/firebase";
+import { firestore } from '../utils/firebase';
 
 export default defineEventHandler(async (event) => {
     const { password } = await readBody(event);
-    const res = await firestore.collection("users").add({
+    const res = await firestore.collection('users').add({
         treeFilter: generateFilter(),
         groundColor: generateRGB(),
         color: generateRGB(),
         num: Math.floor(Math.random() * 5) + 1,
         password,
+        regDate: new Date(),
     });
     return res.id;
 });
@@ -21,11 +22,7 @@ const generateRGB = () => {
 };
 
 const generateFilter = () => {
-    return `invert(${Math.floor(Math.random() * 99)}%) sepia(${Math.floor(
-        Math.random() * 100
-    )}%) saturate(${Math.floor(Math.random() * 1000)}%) hue-rotate(${Math.floor(
+    return `invert(${Math.floor(Math.random() * 99)}%) sepia(${Math.floor(Math.random() * 100)}%) saturate(${Math.floor(Math.random() * 1000)}%) hue-rotate(${Math.floor(
         Math.random() * 360
-    )}deg) brightness(${Math.floor(
-        Math.random() * 250
-    )}%) contrast(${Math.floor(Math.random() * 50)}%)`;
+    )}deg) brightness(${Math.floor(Math.random() * 250)}%) contrast(${Math.floor(Math.random() * 50)}%)`;
 };

@@ -6,16 +6,11 @@ export default defineNuxtConfig({
         public: {
             google_analytics_id: process.env.google_analytics_id,
             production_mode: isProduction,
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://aboutme2.web.app',
         },
     },
     nitro: {
         preset: 'firebase',
     },
-    modules: ['@nuxtjs/sitemap'],
-    sitemap: {
-        hostname: 'https://aboutme2.web.app',
-        gzip: true,
-        exclude: [],
-        routes: ['/', '/me/*', '/about/*'],
-    },
+    modules: ['nuxt-simple-sitemap'],
 });
