@@ -7,10 +7,10 @@ export default cachedEventHandler(
         const sitemap = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
         return [
             ...sitemap.map((p) => {
-                return { loc: `https://aboutme2.web.app/me/${p.id}`, lastmod: p?.regDate };
+                return { loc: `https://aboutme2.web.app/me/${p.id}`, lastmod: p?.regDate ?? new Date() };
             }),
             ...sitemap.map((p) => {
-                return { loc: `https://aboutme2.web.app/about/${p.id}`, lastmod: p?.regDate };
+                return { loc: `https://aboutme2.web.app/about/${p.id}`, lastmod: p?.regDate ?? new Date() };
             }),
         ];
     },
