@@ -27,3 +27,5 @@ logs
 firebase
 .firebaserc
 service-account.json
+firestore.indexes.json
+firestore.rules
