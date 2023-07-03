@@ -21,6 +21,7 @@
         "yarn": "1.22.19"
     },
     "dependencies": {
+        "@nuxtjs/google-adsense": "^2.1.0",
         "copy-to-clipboard": "^3.3.3",
         "firebase": "^8",
         "firebase-admin": "^11.9.0",

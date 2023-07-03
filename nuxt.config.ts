@@ -11,7 +11,16 @@ export default defineNuxtConfig({
     nitro: {
         preset: 'firebase',
     },
-    modules: ['nuxt-simple-sitemap'],
+    modules: [
+        'nuxt-simple-sitemap',
+        // Simple usage
+        [
+            '@nuxtjs/google-adsense',
+            {
+                id: 'ca-pub7426857657290789',
+            },
+        ],
+    ],
     sitemap: {
         siteUrl: 'https://aboutme2.web.app',
     },
