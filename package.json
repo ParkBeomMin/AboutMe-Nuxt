@@ -8,7 +8,7 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "deploy": "NITRO_PRESET=firebase yarn build && cp ./*.txt ./.output/public && cp ./*.html ./.output/public && cp ./service-account.json ./.output/server/service-account.json"
+        "deploy": "NITRO_PRESET=firebase yarn build && cp ./*.txt ./.output/public && cp ./*.html ./.output/public && cp ./service-account.json ./.output/server/service-account.json && firebase deploy"
     },
     "devDependencies": {
         "@nuxt/devtools": "latest",
@@ -17,7 +17,7 @@
         "vue-gtag-next": "^1.14.0"
     },
     "volta": {
-        "node": "18.13.0",
+        "node": "16.14.0",
         "yarn": "1.22.19"
     },
     "dependencies": {
