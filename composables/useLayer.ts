@@ -47,3 +47,17 @@ export const useMoneyLayer = () => {
         setIsShowMoneyLayer,
     };
 };
+
+export const useAdLayer = () => {
+    const adLayerData = useState<{ isShow: boolean }>("adLayer", () => ({
+        isShow: false,
+    }));
+    const setIsShowAdLayer = ({ isShow }: { isShow: boolean }) => {
+        adLayerData.value = { isShow };
+    };
+
+    return {
+        adLayerData,
+        setIsShowAdLayer,
+    };
+};
