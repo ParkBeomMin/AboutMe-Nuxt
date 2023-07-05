@@ -19,6 +19,21 @@ useHead({
             content: '친구들이 생각하는 나는 어떤 사람일까? 친구들의 마음이 모여 나의 새싹을 키워보세요!',
         },
     ],
+    script: [
+        {
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-XN490CVG9K',
+            async: true,
+            children: `(() => {
+            window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'G-XN490CVG9K');
+            })()`,
+        },
+    ],
 });
 useSeoMeta({
     title: 'AboutMe',
@@ -37,8 +52,14 @@ const route = useRoute();
 //     },
 //     { deep: true, immediate: true }
 // );
-</script>
+// window.dataLayer = window.dataLayer || [];
+// function gtag() {
+//     dataLayer.push(arguments);
+// }
+// gtag('js', new Date());
 
+// gtag('config', 'G-XN490CVG9K');
+</script>
 <style>
 body,
 #page-content {
