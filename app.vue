@@ -40,7 +40,7 @@ useSeoMeta({
     ogTitle: 'AboutMe',
     description: '친구들이 생각하는 나는 어떤 사람일까? 친구들의 마음이 모여 나의 새싹을 키워보세요!',
     ogDescription: '친구들이 생각하는 나는 어떤 사람일까? 친구들의 마음이 모여 나의 새싹을 키워보세요!',
-    ogImage: 'https://about-me-tree.web.app/assets/images/sprout.3d595a3260f1a1ed70c22930ea3f2876.svg',
+    ogImage: 'https://github.com/ParkBeomMin/AboutMe-Nuxt/blob/master/assets/favicon/favicon-32x32.png?raw=true',
 });
 const route = useRoute();
 
