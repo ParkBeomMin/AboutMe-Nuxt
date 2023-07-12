@@ -35,5 +35,5 @@ nitro 2.5.2
 
 ## 참고
 
-이미지출처: [https://www.iconfinder.com/](https://www.iconfinder.com/)
-favicon생성: [https://favicon.io/](https://favicon.io/)
+-   이미지출처: [https://www.iconfinder.com/](https://www.iconfinder.com/)
+-   favicon생성: [https://favicon.io/](https://favicon.io/)
