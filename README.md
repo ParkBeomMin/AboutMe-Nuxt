@@ -1,4 +1,4 @@
-# About Me🌱
+# About Me 🌱
 
 <img src="assets/banner.png">
 
@@ -6,7 +6,7 @@
 
 [AboutMe](https://aboutme2.web.app/)
 
-## 컨셉🌿
+## 컨셉 🌿
 
 나에 대한 친구들의 생각들이 비가 되어 새싹을 자라나게 합니다.
 
@@ -16,7 +16,14 @@
   <img src="assets/example.gif">
 </p>
 
-## 개발 환경🖥
+## 기술 🌟
+
+- css keyframes을 활용한 애니메이션 효과
+- firestore 연동
+- composition api 활용
+- seo 설정 및 ga 설정
+
+## 개발 환경 🖥
 
 ![Static Badge](https://img.shields.io/badge/nuxt-v3.6.1-green)
 ![Static Badge](https://img.shields.io/badge/node-v18.13.0-green)
@@ -24,7 +31,7 @@
 ![Static Badge](https://img.shields.io/badge/nitro-v2.5.2-green)
 
 
-## 실행 방법🎮
+## 실행 방법 🎮
 
 `yarn install`
 
@@ -32,7 +39,7 @@
 
 \*\*service-account.json 필요
 
-## 배포 방법🌈
+## 배포 방법 🌈
 
 `yarn deploy`
 
