@@ -16,10 +16,11 @@
 
 ## 개발 환경🖥
 
-Nuxt 3.6.1  
-Node 18.13.0  
-yarn 1.22.19  
-nitro 2.5.2
+![Static Badge](https://img.shields.io/badge/nuxt-v3.6.1-green)
+![Static Badge](https://img.shields.io/badge/node-v18.13.0-green)
+![Static Badge](https://img.shields.io/badge/yarn-v1.22.19-green)
+![Static Badge](https://img.shields.io/badge/nitro-v2.5.2-green)
+
 
 ## 실행 방법🎮
 
