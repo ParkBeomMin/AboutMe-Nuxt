@@ -12,7 +12,9 @@
 
 20개, 50개가 되었을 때 새싹이 자라납니다.
 
-<img src="assets/example.gif">
+<p align="center">
+  <img src="assets/example.gif">
+</p>
 
 ## 개발 환경🖥
 
